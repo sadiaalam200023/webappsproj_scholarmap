@@ -8,24 +8,40 @@
   </head>
 
   <body>
-   
+   <div class="sidebar">
+  <h2>MiniStudentMap</h2>
+  <a href="#" class="active">Post Opportunity</a>
+  <a href="#">View Profile</a>
+  <a href="#">View Applicants</a>
+  <a href="#">Edit Profile</a>
+  <a href="#">Logout</a>
+</div>
+<div class="form-card">
 <form action="formdata.php" method="post">
     <label for="insname">Institution name:</label><br>
   <input type="text" id="insname" name="insname" required><br>
+  <label for="insname">Location:</label><br>
+  <input type="text" id="Location" name="Location" required><br>
 
-
-
-
-
-
-
-
-
-
-
-
-  <button type="submit">Submit Opportunity to list</button>
+    <label for="Opportunity Type">Opportunity type:</label><br>
+    
+    <label for="Deadline">Application Deadline</label><br>
+    <input type="date" id="Deadline" name="Deadline">
+<button type="submit">Submit Opportunity to list</button>
 </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+  
+
 
 
 

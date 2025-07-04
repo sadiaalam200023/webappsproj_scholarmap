@@ -11,7 +11,7 @@
    <div class="sidebar">
   <h2>ScholarMap</h2>
   <a href="#" class="active">Post Opportunity</a>
-  <a href="#">View Profile</a>
+  <a href="#">Home</a>
   <a href="#">View Applicants</a>
   <a href="#">Edit Profile</a>
   <a href="#">Logout</a>
@@ -24,9 +24,19 @@
   <input type="text" id="Location" name="Location" required><br>
 
     <label for="Opportunity Type">Opportunity type:</label><br>
+    <input list="Opportunity types" name="Opportunity types" required>
+  <datalist id="Opportunity types">
+    <option value="Workshop">
+    <option value="Part-time jobs">
+    <option value="Volunteering">
+    <option value="Competitions">
+    
+  </datalist> 
+    <label for="Opportunity description">Opportunity description:</label><br>
+ <input type="text" id="opdescription" name="opdescription" required><br>
     
     <label for="Deadline">Application Deadline</label><br>
-    <input type="date" id="Deadline" name="Deadline">
+    <input type="date" id="Deadline" name="Deadline" required>
 <button type="submit">Submit Opportunity to list</button>
 </form>
 </div>

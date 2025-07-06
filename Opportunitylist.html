@@ -21,6 +21,8 @@
       <h3>ABC Institute</h3>
       <p><strong>Opportunity:</strong> Data Entry Internship (Remote). For University students only</p>
       <p><strong>Deadline:</strong> July 20, 2025</p>
+      <p><strong>Location:</strong>Dhaka</p>
+      <p><strong>Opportunity type:</strong>Internship</p>
     </div>
     <div class="opportunity-action">
       <a href="apply.php?id=1" class="apply-btn">Apply</a>
@@ -32,11 +34,39 @@
       <h3>GreenTech University</h3>
       <p><strong>Opportunity:</strong> Environment Awareness Competition. For School and College students.</p>
       <p><strong>Deadline:</strong> August 5, 2025</p>
+      <p><strong>Location:</strong>Dhaka</p>
+       <p><strong>Opportunity type:</strong>Competition</p>
     </div>
     <div class="opportunity-action">
       <a href="apply.php?id=2" class="apply-btn">Apply</a>
     </div>
   </div>
+  <div class="filter-section">
+  <form method="GET" action="" class="filter-form">
+    <select name="type" required>
+      <option value="">All Types</option>
+      <option value="job">Part-Time Job</option>
+      <option value="volunteering">Volunteering</option>
+      <option value="competition">Competition</option>
+      <option value="workshop">Workshop</option>
+    </select>
+
+    <select name="location" required>
+      <option value="">All Locations</option>
+      <option value="Dhaka">Dhaka</option>
+      <option value="Chattogram">Chattogram</option>
+      <option value="Online">Online</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <button type="submit">Filter</button>
+  </form>
+</div>
+
+<div class="opportunity-list">
+  <!-- Your PHP loop or static cards go here -->
+</div>
+
 </div>
 
   </body>

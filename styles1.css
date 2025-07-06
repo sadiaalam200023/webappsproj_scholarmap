@@ -36,6 +36,40 @@
   color: #555;
   font-size: 15px;
 }
+.filter-section {
+  max-width: 800px;
+  margin: 30px auto 20px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.filter-form select,
+.filter-form button {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.filter-form button {
+  background-color: #4a90e2;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-form button:hover {
+  background-color: #3a76c4;
+}
 
 .apply-btn {
   text-decoration: none;

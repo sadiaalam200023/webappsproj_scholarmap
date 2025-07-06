@@ -8,7 +8,49 @@
   background-attachment: fixed;
   background-size: cover;
   ;
-  
+  .opportunity-list {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.opportunity-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffffcc; /* semi-transparent white */
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.opportunity-info h3 {
+  margin: 0 0 8px;
+  color: #4a90e2;
+}
+
+.opportunity-info p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 15px;
+}
+
+.apply-btn {
+  text-decoration: none;
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.apply-btn:hover {
+  background-color: #3a76c4;
+}
+
 }
 .containers{
   background-color: rgba(255, 255, 255, 0.9); /* white with 80% opacity */

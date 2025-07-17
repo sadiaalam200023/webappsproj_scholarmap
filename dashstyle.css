@@ -1,0 +1,121 @@
+* {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: #f4f7fa;
+      padding: 40px;
+    }
+
+    .dashboard-card {
+      max-width: 700px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .form-row {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: 500;
+      margin-bottom: 6px;
+      color: #555;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus {
+      border-color: #4a90e2;
+      outline: none;
+    }
+
+    .btn-row {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .save-btn {
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .save-btn:hover {
+      background-color: #357abd;
+    }
+
+.profile-picture {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* makes it circular */
+  object-fit: cover;
+  border: 3px solid #4a90e2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.sidebar {
+      width: 200px;
+      background-color: #ffffff;
+      padding: 30px 20px;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+.sidebar h2 {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #4a90e2;
+      text-align: center;
+    }
+
+.sidebar a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      padding: 10px 15px;
+      margin: 5px 0;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+.sidebar a:hover,
+.sidebar a.active {
+      background-color: #e0ebff;
+      color: #4a90e2;
+    }

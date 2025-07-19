@@ -1,0 +1,114 @@
+* {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px;
+      background-color: #f4f7fa;
+    }
+
+    .application-list {
+      max-width: 800px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .application-list h2 {
+      text-align: center;
+      margin-bottom: 24px;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 14px 18px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+
+    th {
+      background-color: #f0f3f7;
+      color: #444;
+    }
+
+    .status {
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+
+    .pending {
+      color: #f0a202;
+    }
+
+    .accepted {
+      color: #4caf50;
+    }
+
+    .rejected {
+      color: #f44336;
+    }
+.sidebar {
+      width: 200px;
+      background-color: #ffffff;
+      padding: 30px 20px;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+.sidebar h2 {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #4a90e2;
+      text-align: center;
+    }
+
+.sidebar a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      padding: 10px 15px;
+      margin: 5px 0;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+.sidebar a:hover,
+.sidebar a.active {
+      background-color: #e0ebff;
+      color: #4a90e2;
+    }
+.action-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #141010;
+  margin-right: 12px;  
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.accept-btn {
+  background-color: #ffffff; /* green */
+  border: 2px solid #008CBA;
+}
+
+.reject-btn {
+  background-color: #ffffff; /* red */
+  border: 2px solid #f44336;
+}

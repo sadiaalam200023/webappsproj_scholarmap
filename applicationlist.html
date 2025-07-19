@@ -4,8 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Applicant list</title>
-  <link rel="stylesheet" href="styles1.css" />
+  <link rel="stylesheet" href="liststyle.css" />
   </head>
   <body>
+    <div class="sidebar">
+  <h2>ScholarMap</h2>
+  <a href="oppforms.html" class="">Post Opportunity</a>
+  <a href="institute.html">Edit Profile</a>
+  <a href="applicationlist.html">View Applicants</a>
+  
+  <a href="index.html">Logout</a>
+</div>
+<div class="application-list">
+    <h2>Opportunity Applicants</h2>
+    <table>
+      <tr>
+        <th>Student Name</th>
+        <th>Student ID</th>
+        <th>Transcript</th>
+        <th>Student ID Card</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+
+      <tr>
+        <td>Sadia Alam</td>
+        <td>2110819</td>
+        <td><a href="#" class="doc-link">View Transcript</a></td>
+        <td><a href="#" class="doc-link">View ID</a></td>
+        <td class="status pending">Pending</td>
+        <td>
+          <button class="action-btn accept-btn">Accept</button>
+          <button class="action-btn reject-btn">Reject</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Tanvir Rahman</td>
+        <td>2222219</td>
+        <td><a href="#" class="doc-link">View Transcript</a></td>
+        <td><a href="#" class="doc-link">View ID</a></td>
+        <td class="status accepted">Accepted</td>
+        <td>
+          <button class="action-btn accept-btn">Accept</button>
+          <button class="action-btn reject-btn">Reject</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Rina Khatun</td>
+        <td>2011564</td>
+        <td><a href="#" class="doc-link">View Transcript</a></td>
+        <td><a href="#" class="doc-link">View ID</a></td>
+        <td class="status rejected">Rejected</td>
+        <td>
+          <button class="action-btn accept-btn">Accept</button>
+          <button class="action-btn reject-btn">Reject</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
      </body>
 </html>

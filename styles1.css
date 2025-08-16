@@ -3,14 +3,7 @@
       font-family: 'Inter', sans-serif;
     }
 
-.opportunity-list{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  max-width: 1100px;
-  margin-left: 200px;
-}
+
 .signup-card {
       background: rgb(237, 235, 248);
       padding: 30px 40px;
@@ -20,65 +13,7 @@
       max-width: 450px;
     }
 
-.opportunity-card {
-  display: flex;
-  
-  
-  background-color: #ffffffcc; /* semi-transparent white */
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
-  height: 100%;
-  flex-direction: row;
-  justify-content: space-between;
-}
 
-.opportunity-info h3 {
-  margin: 0 0 8px;
-  color: #4a90e2;
-}
-
-.opportunity-info p {
-  margin: 4px 0;
-  color: #555;
-  font-size: 15px;
-}
-.filter-section {
-  max-width: 800px;
-  margin: 30px auto 20px;
-  padding: 0 20px;
-  text-align: center;
-}
-
-.filter-form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-}
-
-.filter-form select,
-.filter-form button {
-  padding: 10px 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-}
-
-.filter-form button {
-  background-color: #4a90e2;
-  color: #fff;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.filter-form button:hover {
-  background-color: #3a76c4;
-}
 
 .apply-btn {
   text-decoration: none;
@@ -106,7 +41,7 @@
 }
 
 .sidebar {
-      width: 200px;
+      width: 180px;
       background-color: #ffffff;
       padding: 30px 20px;
       box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
@@ -126,13 +61,15 @@
     }
 
 .sidebar a {
-      text-decoration: none;
-      color: #333;
-      font-size: 16px;
-      padding: 10px 15px;
-      margin: 5px 0;
-      border-radius: 8px;
-      transition: background 0.3s;
+     display: block;            /* make each link take full width */
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 8px;
+  transition: background 0.3s;
+  text-align: left;
     }
 
 .sidebar a:hover,
@@ -233,6 +170,81 @@ body {
         padding: 20px;
       }
     }
+.opportunity-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  padding: 15px;
+  max-width: 1000px;
+  margin-left: 180px;
+}
+.opportunity-card {
+  display: flex;
+  
+  
+  background-color: #ffffffcc; /* semi-transparent white */
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.opportunity-info h3 {
+  margin: 0 0 8px;
+  color: #4a90e2;
+}
+
+.opportunity-info p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 15px;
+}
+
+.filter-section {
+  max-width: 8000px;
+  margin: 30px auto 20px;
+  padding: 0 20px;
+  text-align: center;
+  
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.filter-form select,
+.filter-form button {
+  padding: 8px 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.filter-form button {
+  background-color: #4a90e2;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-form button:hover {
+  background-color: #2464b8;
+}
 
 
-   
+
+
+
+
+
+
+

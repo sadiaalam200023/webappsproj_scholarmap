@@ -8,7 +8,7 @@ $username = "root";
 $password = "";
 
 
-$dbname = "";
+$dbname = "scholarmap_db";
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);

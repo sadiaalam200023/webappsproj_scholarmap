@@ -65,11 +65,23 @@ $result = $stmt->get_result();
           <p><strong>Opportunity type:</strong> <?php echo htmlspecialchars($row['type']); ?></p>
         </div>
         <div class="opportunity-action">
-          <a href="apply.php?id=<?php echo $row['opportunity_id']; ?>" class="apply-btn">Apply</a>
+          <a href="#" class="apply-btn">Apply</a>
         </div>
       </div>
     <?php endwhile; ?>
   </div>
+  <script>
+ document.querySelectorAll(".apply-btn").forEach(button => {
+    button.addEventListener("click", function(event) {
+      event.preventDefault(); 
+      this.textContent = "Applied"; 
+      this.style.pointerEvents = "none"; 
+      this.style.backgroundColor = "#ccc"; 
+    });
+    });
+  
+</script>
+
   <div class="filter-section">
     <form method="GET" action="" class="filter-form">
       <select name="type">

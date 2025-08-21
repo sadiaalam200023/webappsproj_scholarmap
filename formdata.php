@@ -5,7 +5,7 @@ include 'database.php';
 // Collect form data
 $insname     = $_POST['insname'];
 $location    = $_POST['Location'];
-$op_type     = $_POST['Opportunity_types']; // Name must match form exactly
+$op_type     = $_POST['Opportunity_types']; 
 $description = $_POST['opdescription'];
 $deadline    = $_POST['Deadline'];
 
@@ -37,7 +37,8 @@ $stmt_op = $conn->prepare($sql_op);
 $stmt_op->bind_param("isssss", $org_id, $op_type, $description, $op_type, $location, $deadline);
 
 if ($stmt_op->execute()) {
-    echo "<h3>✅ Opportunity posted successfully!</h3>";
+    header("Location: viewoptb.php");
+    exit();
 } else {
     echo "❌ Error: " . $stmt_op->error;
 }

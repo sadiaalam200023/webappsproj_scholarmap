@@ -28,6 +28,7 @@
       display: flex;
       flex-direction: column;
       margin-bottom: 20px;
+      
     }
 
     label {
@@ -86,7 +87,7 @@
 }
 .sidebar {
       width: 180px;
-      background-color: #ffffff;
+      background-color: #e1e1e1;
       padding: 30px 20px;
       box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
       display: flex;

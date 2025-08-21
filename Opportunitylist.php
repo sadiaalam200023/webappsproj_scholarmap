@@ -43,7 +43,7 @@ $result = $stmt->get_result();
 
 <div class="sidebar">
   <h2>ScholarMap</h2>
-  <a href="Opportunitylist.html" class="">View Opportunity list</a>
+  <a href="Opportunitylist.php" class="">View Opportunity list</a>
   <a href="studentdash.html">Edit profile</a>
   <a href="appliedlist.html">View Applied opportunity list</a>
  
